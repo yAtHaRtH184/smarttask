@@ -1,0 +1,20 @@
+# Backend
+backend/target/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/bin/
+backend/*.log
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.sln
