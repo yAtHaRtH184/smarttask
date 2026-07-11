@@ -18,3 +18,5 @@ frontend/*.local
 .DS_Store
 *.suo
 *.sln
+target/
+.env
