@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/smarttask_db
-    username: smarttask
-    password: smarttask123
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
 
   jpa:
     hibernate:
@@ -12,7 +12,7 @@ spring:
       hibernate:
         format_sql: true
 
-# JWT configuration — change jwt.secret in production (must be 32+ characters)
+
 jwt:
-  secret: SMARTTASK_SUPER_SECRET_JWT_KEY_FOR_SIGNING_256_BITS_2024
-  expiration: 3600000  # 1 hour in milliseconds
+  secret: ${JWT_SECRET}
+  expiration: ${JWT_EXPIRATION}
